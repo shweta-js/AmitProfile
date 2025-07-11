@@ -1,0 +1,36 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .project-entry {
+    padding: 1rem;
+    border-left: 4px solid #00bcd4;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .project-links a {
+    margin-right: 1rem;
+    color: #00bcd4;
+    font-weight: 500;
+  }
+  
+  .project-card,
+.project-entry,
+.job-card {
+  background-color: var(--card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover,
+.project-entry:hover,
+.job-card:hover {
+  transform: translateY(-5px);
+}
