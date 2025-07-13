@@ -52,20 +52,8 @@
 }
 
 .contact-icons a {
-  font-size: 5rem;
-  color: #fff;
-  background-color: #a288a6;
-  padding: 1rem;
-  border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  animation: float 4s ease-in-out infinite;
-}
-
-.contact-icons a:hover {
-  transform: scale(1.2);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background-color: #bb9bb0;
+  color: #A288A6;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

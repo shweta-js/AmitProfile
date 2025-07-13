@@ -3,6 +3,7 @@ import './Contact.css';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 const Contact = () => {
+  
   return (
     <section className="contact-container">
       <div className="contact-text">
@@ -11,11 +12,10 @@ const Contact = () => {
       </div>
 <hr className='divider-line'/>
       <div className="contact-icons">
-        <div className="icon github"><FaGithub /></div>
-        <div className="icon linkedin"><FaLinkedin /></div>
-        <div className="icon whatsapp"><FaWhatsapp /></div>
-        <div className="icon email"><FaEnvelope /></div>
-        <div className="icon phone"><FaPhoneAlt /></div>
+        <div className="icon github"><a href="https://github.com/shweta-js"><FaGithub /></a></div>
+        <div className="icon linkedin"><a href="https://in.linkedin.com/in/shweta-sure-308879193"><FaLinkedin /></a></div>
+        <div className="icon whatsapp"><a href="https://wa.me/8310767082"><FaWhatsapp /></a></div>
+        <div className="icon email"><a href="mailto:shwetajs.wrk@gmail.com"><FaEnvelope /></a></div>
       </div>
     </section>
   );
