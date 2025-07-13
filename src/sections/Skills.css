@@ -1,5 +1,5 @@
 .skills-section {
-  width: 100vw; 
+  width: auto; 
   background-color: var(--primary-bg);
   padding: 4rem 0;
   color: var(--text-light);
