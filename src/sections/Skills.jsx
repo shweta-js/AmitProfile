@@ -23,11 +23,7 @@ const skills = [
 const Skills = () => {
   return (
     <section className="skills-section" id="skills">
-      <h2>What I do</h2>
-      <p>
-        I build responsive, scalable web applications using the MERN stack.
-        Below are the technologies I work with.
-      </p>
+      <h2>Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div className="skill-card" key={index}>

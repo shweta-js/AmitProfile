@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="home-section">
        <div className="home-image">
-        <img src={DevSVG} alt="Developer Illustration" />
+        <img src={DevSVG} draggable={false} alt="Developer Illustration" />
       </div>
       <div className="home-text">
         <h1>

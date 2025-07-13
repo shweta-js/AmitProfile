@@ -1,57 +1,39 @@
-function Projects() {
-    const allProjects = [
-      {
-        title: "Blog Platform",
-        description: "A full-stack blog site using React, Node.js, and MongoDB with admin panel, markdown support, and user auth.",
-        github: "https://github.com/yourusername/blog-platform",
-        demo: "https://yourblogapp.vercel.app"
-      },
-      {
-        title: "Weather Forecast App",
-        description: "A React-based frontend that fetches weather data from OpenWeatherMap API. Fully responsive and styled with Tailwind.",
-        github: "https://github.com/yourusername/weather-app",
-        demo: "https://weather-forecast.vercel.app"
-      },
-      {
-        title: "Social Media App",
-        description: "A MERN-based social media platform with real-time posts, likes, comments, and user authentication.",
-        github: "https://github.com/yourusername/social-media-app",
-        demo: "https://socialhub.vercel.app"
-      },
-      {
-        title: "E-commerce Website",
-        description: "Full-featured e-commerce site built with React, Redux, and Node.js. Includes cart, checkout, and payment integration.",
-        github: "https://github.com/yourusername/ecommerce-site",
-        demo: "https://shwetastore.vercel.app"
-      },
-      {
-        title: "Portfolio (This Website)",
-        description: "This personal portfolio built using the MERN stack with routing, custom styling, and responsiveness.",
-        github: "https://github.com/yourusername/personal-portfolio",
-        demo: "/"
-      }
-    ];
-  
-    return (
-      <section className="container">
-        <h1>Projects</h1>
-        <div className="project-list">
-          {allProjects.map((project, index) => (
-            <div className="project-entry" key={index}>
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-              <div className="project-links">
-                <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-                {project.demo !== "/" && (
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                )}
-              </div>
-            </div>
-          ))}
+import React from 'react';
+import './Projects.css';
+
+const Projects = () => {
+  return (
+    <section id="projects" className="projects-section">
+      <h2 className="projects-title">My Projects</h2>
+      <div className="projects-grid">
+        <div className="project-card card-0">
+          <h3>Social Media App</h3>
+          <p>A MERN-based responsive social media platform with real-time chat and post features.</p>
+          <a href="#">View Project</a>
         </div>
-      </section>
-    );
-  }
-  
-  export default Projects;
-  
+        <div className="project-card card-1">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio showcasing my skills, projects, and contact form.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div className="project-card card-2">
+          <h3>E-commerce Platform</h3>
+          <p>Full-stack application with cart, payment, and admin dashboard.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div className="project-card card-3">
+          <h3>Chat App</h3>
+          <p>Real-time chat app using Socket.IO and Node.js with authentication and themes.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div className="project-card card-4">
+          <h3>Weather Dashboard</h3>
+          <p>Weather forecast UI using public APIs and React hooks.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

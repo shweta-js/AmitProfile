@@ -1,21 +1,30 @@
-import React from 'react';
+import logo from '../assets/logo.png';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
-import logo from '../assets/logo.png'; // adjust path if needed
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Logo" className="logo" />
+        <a href="#home"><img src={logo} alt="Logo" className="logo" /></a>
       </div>
-      <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#latestwork">Latest Work</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <a href="#home" onClick={closeMenu}>Home</a>
+        <a href="#skills" onClick={closeMenu}>Skills</a>
+        <a href="#experience" onClick={closeMenu}>Experience</a>
+        <a href="#projects" onClick={closeMenu}>Projects</a>
+        <a href="#contact" onClick={closeMenu}>Contact</a>
+      </div>
+
+      <div className="burger" onClick={toggleMenu}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </div>
     </nav>
   );
 };

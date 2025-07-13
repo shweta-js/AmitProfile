@@ -1,8 +1,4 @@
-/* App.css */
 
-main {
-  /* padding: 2rem; */
-}
 
 section {
   margin-bottom: 4rem;
@@ -18,7 +14,6 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-/* App.css – Section Styling */
 
 section.container {
   background-color: white;
@@ -42,6 +37,8 @@ h2 {
 
 ul {
   padding-left: 1.5rem;
+  list-style-type: none;
+
 }
 
 ul li {
@@ -49,13 +46,12 @@ ul li {
   font-size: 1.1rem;
   position: relative;
   padding-left: 1.5rem;
+  list-style-type: none;
 }
 
 ul li::before {
-  content: '•';
   position: absolute;
   left: 0;
-  color: #00bcd4;
   font-size: 1.3rem;
   line-height: 1;
 }
@@ -129,19 +125,15 @@ ul li::before {
 h1 {
   font-size: 2rem;
   color: var(--text);
-  /* border-bottom: 2px solid var(--primary); */
   display: inline-block;
   margin-bottom: 1rem;
 }
 section {
-  /* min-height: 100vh; */
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  padding-top:2rem; /* ensure enough top space */
-  /* scroll-margin-top: 100px; */
 }
 
 :root {
@@ -160,18 +152,11 @@ section {
 .button:hover {
   background-color: var(--secondary-accent);
 }
-h1, h2, h3 {
-  color: var(--secondary-accent);
-}
 
-p {
-  color: var(--text-muted);
-}
 .section {
   background-color: var(--primary-bg);
   color: var(--text-light);
 }
-/* Custom Scrollbar Styling - Transparent Track */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
