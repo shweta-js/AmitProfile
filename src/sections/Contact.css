@@ -81,6 +81,10 @@
     padding: 0;
   }
 
+  .contact-text>.headline{
+    margin-top:4rem;
+    font-size:3rem;
+  }
   .contact-icons .icons {
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,4 +108,13 @@
   .contact-icons>div{
     padding:1rem;
   }
+}
+
+.download-resume-button{
+  padding:15px;
+  border-radius: 10px;
+  background-color: #A288A6;
+  text-decoration: none;
+  color:#F1E3E4;
+  margin:1rem 0;
 }
