@@ -1,28 +1,37 @@
 import React from "react";
 import "./Home.css";
-import DevSVG from "../assets/home.svg"; 
+import AmitImage from "../assets/home.png"; // Replace with your image path
+import { useParams, useNavigate } from "react-router-dom";
+
 
 export default function Home() {
+    const navigate = useNavigate();
+  
   return (
-    <section className="home-section">
-       <div className="home-image">
-        <img src={DevSVG} draggable={false} alt="Developer Illustration" />
-      </div>
-      <div className="home-text">
-        <h1>
-          Hi, I'm <h1 className="my-name">Shweta Sure</h1> <span className="wave">👋</span>
-        </h1>
-        <hr></hr>
-        <h2>Full Stack Web Developer</h2>
-        <p>
-          Welcome to my personal portfolio. I build clean, modern, and responsive
-          web applications using the <strong>MERN stack</strong>.
-        </p>
-        <a href="#contact" className="contact-button">
+    <section className="hero">
+      <div className="hero-left">
+        <div className="intro">
+          <p className="hi">Hi, I am</p>
+          <h1 className="name">Amit Sure  <span className="ai-engg">- AI Engineer</span></h1>
+          <p className="small-text">3.5 years of experience in AI/ML, Deep Learning, and Data Analytics</p>
+
+          <a
+  className="contact-me"
+  onClick={(e) => {
+    e.preventDefault();
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  href="#contact"
+>
   Contact Me
 </a>
+
+        </div>
       </div>
-     
+
+      <div className="hero-right">
+        <img src={AmitImage} alt="Amit" className="amit-photo" />
+      </div>
     </section>
   );
 }

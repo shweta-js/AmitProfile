@@ -1,0 +1,135 @@
+.recommendations-section {
+  background: #000;
+  padding: 100px ;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.recommendations-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.recommendations-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.recommendation-card {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.recommendation-inner {
+  width: 60%;
+  background: #d7d7d7;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.recommendation-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.recommendation-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.recommendation-role {
+  font-size: 1rem;
+  color: #666;
+}
+
+.read-more-btn {
+  margin-top: 15px;
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.arrow-btn {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.arrow-btn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.arrow-btn.left {
+  position: absolute;
+  left: 5%;
+}
+
+.arrow-btn.right {
+  position: absolute;
+  right: 5%;
+}
+
+.slider-dots {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active-dot {
+  background-color: white;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .recommendation-inner {
+    width: 90%;
+    padding: 80px;
+  }
+
+  .arrow-btn.left {
+    left: 2%;
+  }
+
+  .arrow-btn.right {
+    right: 2%;
+  }
+}

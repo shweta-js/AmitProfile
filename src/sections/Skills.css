@@ -1,67 +1,140 @@
-.skills-section {
-  width: auto; 
-  background-color: var(--primary-bg);
-  padding: 4rem 0;
-  color: var(--text-light);
+.skillset-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000000;
+  color: white;
+  padding: 60px;
+  padding-top:5rem;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
+  gap: 40px;
 }
 
-.skills-section h2 {
-  color: var(--secondary-accent);
-  font-size: 2.8rem;
-  margin:2rem 0;
-  text-align: center;
+/* Left Content */
+.skillset-content {
+  max-width: 50%;
 }
 
-.skills-section p {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  margin-bottom: 3rem;
-  text-align: center;
-  padding: 0 1rem;
-  max-width: 800px;
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 2rem;
-  width: 90%;
-  max-width: 1100px;
-  padding: 0 1rem;
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.skill-card {
-  background-color: var(--primary-accent);
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.highlight {
+  font-weight: bold;
 }
 
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(172, 127, 255, 0.4);
+.description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
-.skill-card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
-}
-
-.skill-card span {
+.download-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
   font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: white;
+  color: black;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+/* Right Bubble Area */
+.skills-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+}
+
+/* Bubble Colors */
+.Python { background-color: #c8f0ff; }
+.DS { background-color: #8cd0f7; }
+.ML { background-color: #ffe4cc; }
+.DL { background-color: #d8f5d0; }
+.NLP { background-color: #e5d5f9; }
+.CV { background-color: #c8d9ff; }
+.Flask { background-color: #ffffff; }
+.Cloud { background-color: #c8f0ff; }
+.BD { background-color: #8cd0f7; }
+.Git { background-color: #ffe4cc; }
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .skillset-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .skillset-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .skills-bubbles {
+    padding: 2rem 0;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .bubble {
+    width: 90px;
+    height: 90px;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .skillset-section {
+    min-height: auto; /* remove full height on mobile */
+  }
 }

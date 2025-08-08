@@ -1,7 +1,114 @@
-.experience-title{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1c1d21;
-    margin-top:4.5rem;
-    text-align: center;
+.exp-timeline-section {
+  padding: 50px 20px;
+  background: #d7d7d7; /* White background for whole section */
 }
+
+.exp-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.exp-timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  
+}
+
+.exp-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.exp-left {
+  flex: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.exp-circle {
+  width: 50px;
+  height: 50px;
+  background: #000000;
+  color: #ececec;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.exp-year {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #777;
+  margin-right:-0.45rem;
+}
+
+/* Vertical line between circles */
+.exp-left::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  bottom: -80px;
+  width: 3px;
+  background: #777;
+  z-index: 0;
+}
+
+.exp-right {
+  background: #ececec;
+
+  padding: 15px 20px;
+  margin-left: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+
+}
+
+.exp-right h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color:#000;
+}
+
+.exp-duration {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.exp-right h4 {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.exp-right p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Beyond Work special style */
+.beyond-work-link .exp-circle {
+  background: #ff9800;
+}
+
+/* .beyond-work-link:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.beyond-work-link:hover .exp-right {
+  background: #fff7e6;
+} */

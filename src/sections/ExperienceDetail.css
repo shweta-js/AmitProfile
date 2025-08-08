@@ -1,0 +1,61 @@
+.experience-detail {
+ 
+  padding: 5rem 2rem 2rem;
+   width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  margin: 60px auto;
+   margin-top:0;
+  background: #d7d7d7;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  color: #333; /* Force dark text */
+  font-size: 1.1rem; /* Similar to recommendations */
+  line-height: 1.6;
+}
+
+.experience-detail h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000; /* Ensure title is black */
+}
+
+.experience-detail h3 {
+  font-size: 1.4rem;
+  color: #000; /* Company name in black */
+  font-weight: 600;
+}
+
+.experience-detail .duration {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.experience-detail ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.experience-detail li {
+  margin-bottom: 10px;
+}
+
+.back-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+  
+}
+
+.back-btn:hover {
+  background: #444;
+}
+.exp-detail-title{
+    font-size:4rem;
+}

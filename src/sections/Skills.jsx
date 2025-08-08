@@ -1,39 +1,38 @@
-import React from 'react';
-import './Skills.css';
-import htmlIcon from '../assets/html.png';
-import cssIcon from '../assets/css.png';
-import jsIcon from '../assets/javascript.png';
-import reactIcon from '../assets/react.svg';
-import githubIcon from '../assets/github.png';
-import nodejsIcon from '../assets/nodejs.png';
-import mongodbIcon from '../assets/mongodb.png';
-import dockerIcon from '../assets/docker.png';
+import React from "react";
+import "./Skills.css";
 
-const skills = [
-  { name: 'HTML', icon: htmlIcon },
-  { name: 'CSS', icon: cssIcon },
-  { name: 'JAVASCRIPT', icon: jsIcon },
-  { name: 'REACT JS', icon: reactIcon },
-  { name: 'GITHUB', icon: githubIcon },
-  { name: 'NODE JS', icon: nodejsIcon },
-  { name: 'MONGODB', icon: mongodbIcon },
-  { name: 'DOCKERS', icon: dockerIcon },
-];
-
-const Skills = () => {
+export default function Skillset() {
   return (
-    <section className="skills-section" id="skills">
-      <h2>Skills</h2>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div className="skill-card" key={index}>
-            <img src={skill.icon} alt={skill.name} />
-            <span>{skill.name}</span>
-          </div>
-        ))}
+    <section className="skillset-section">
+      <div className="skillset-content">
+        <h1 className="title">My skillset</h1>
+        <p className="subtitle">
+          I’m <span className="highlight">a Data Science and AI Engineer</span>
+        </p>
+        <p className="description">
+          Experienced in designing and deploying end‑to‑end machine learning and deep learning solutions. 
+          Skilled in data preprocessing, feature engineering, and building predictive models using Python, 
+          TensorFlow, and PyTorch. Proficient with SQL/NoSQL databases, cloud platforms,
+           and creating insightful dashboards with tools like Tableau and Power BI. 
+           Passionate about turning complex datasets into actionable insights and impactful business outcomes.
+        </p>
+        <a className="download-btn" href="../../public/amit-sure-resume.pdf" download="amit-sure-resume.pdf" target="_blank" type="application/octet-stream">
+  Download Resume <span className="arrow">↓</span>
+</a>
+      </div>
+
+      <div className="skills-bubbles">
+        <div className="bubble Python">Python</div>
+        <div className="bubble DS">Data Science</div>
+        <div className="bubble ML">Machine Learning</div>
+        <div className="bubble DL">Deep Learning</div>
+        <div className="bubble NLP">NLP</div>
+        <div className="bubble CV">Computer vision</div>
+        <div className="bubble Flask">Agentic AI</div>
+        <div className="bubble Cloud">Cloud</div>
+        <div className="bubble BD">LLMs</div>
+        <div className="bubble Git">Git</div>
       </div>
     </section>
   );
-};
-
-export default Skills;
+}

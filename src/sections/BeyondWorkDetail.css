@@ -1,0 +1,80 @@
+.beyond-detail-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0;
+  margin-bottom:0;
+  padding: 4rem;
+  padding-top:6rem;
+  background: #d7d7d7;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.detail-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* Ensures the image doesn't stretch */
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+   display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+.detail-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  
+}
+
+.detail-duration {
+  font-style: italic;
+  color: #7D8D86;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.detail-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background: #3E3F29;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.beyond-back-btn:hover {
+  background: #2c2d1e;
+}
+
+@media (max-width: 768px) {
+  .beyond-detail-container {
+    margin: 40px 16px;
+    padding: 1.5rem;
+  }
+
+  .beyond-detail-title {
+    font-size: 2rem;
+  }
+
+  .beyond-detail-description {
+    font-size: 1rem;
+  }
+}

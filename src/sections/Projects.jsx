@@ -4,7 +4,7 @@ import './Projects.css';
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2 className="projects-title">Projects</h2>
+      {/* <h2 className="projects-title">Projects</h2>
       <div className="projects-grid">
         <div className="project-card card-0">
           <h3>Social Media App</h3>
@@ -31,7 +31,8 @@ const Projects = () => {
           <p>Weather forecast UI using public APIs and React hooks.</p>
           <a href="#">View Project</a>
         </div>
-      </div>
+      </div> */}
+      projects
     </section>
   );
 };
