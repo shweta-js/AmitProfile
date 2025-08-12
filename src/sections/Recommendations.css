@@ -1,6 +1,6 @@
 .recommendations-section {
   background: #000;
-  padding: 100px ;
+  padding: 100px;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -33,6 +33,7 @@
 
 .recommendation-inner {
   width: 60%;
+  max-width: 900px;
   background: #d7d7d7;
   padding: 40px;
   border-radius: 10px;
@@ -45,6 +46,7 @@
   font-style: italic;
   color: #333;
   margin-bottom: 20px;
+  white-space: pre-wrap; /* preserve original formatting */
 }
 
 .recommendation-name {
@@ -118,11 +120,36 @@
   background-color: white;
 }
 
+/* Tablet view */
+@media (max-width: 1024px) {
+  .recommendation-inner {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .recommendations-title {
+    font-size: 2rem;
+  }
+
+  .recommendation-text {
+    font-size: 1.1rem;
+  }
+}
+
 /* Mobile view */
 @media (max-width: 768px) {
+  .recommendations-section {
+    padding: 60px 20px;
+  }
+
   .recommendation-inner {
-    width: 90%;
-    padding: 80px;
+    width: 95%;
+    padding: 20px;
+  }
+
+  .recommendations-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
   }
 
   .arrow-btn.left {
@@ -131,5 +158,36 @@
 
   .arrow-btn.right {
     right: 2%;
+  }
+
+  .recommendation-text {
+    font-size: 1rem;
+  }
+}
+
+/* Very small mobile */
+@media (max-width: 480px) {
+  .recommendations-section {
+    padding: 40px 15px;
+  }
+
+  .recommendation-inner {
+    padding: 15px;
+  }
+
+  .recommendations-title {
+    font-size: 1.5rem;
+  }
+
+  .recommendation-text {
+    font-size: 0.95rem;
+  }
+
+  .recommendation-name {
+    font-size: 1rem;
+  }
+
+  .recommendation-role {
+    font-size: 0.9rem;
   }
 }

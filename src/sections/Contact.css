@@ -91,33 +91,44 @@
 /* Mobile View */
 @media (max-width: 768px) {
   .contact-section {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Stack vertically */
+    height: 100vh; /* Keep full height on mobile */
+  }
+
+  /* Right section (image) on top */
+  .contact-right {
+    order: 1; /* Comes first */
+    flex: 1; /* Fill space */
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-right img {
+    max-width: 60%;
     height: auto;
   }
 
+  /* Left section (text) at bottom */
   .contact-left {
-    flex: none;
+    order: 2; /* Comes second */
+    flex: 1; /* Fill space */
     width: 100%;
     padding: 2rem;
     font-size: 2rem;
-    clip-path: none; /* Remove tilt on mobile for better fit */
+    clip-path: none; /* Remove tilt on mobile */
     text-align: center;
     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact-icons {
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .contact-right {
-    flex: none;
-    width: 100%;
-    padding: 2rem 0;
-  }
-
-  .contact-right img {
-    max-width: 60%;
   }
 
   .icon {
