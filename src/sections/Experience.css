@@ -1,6 +1,6 @@
 .exp-timeline-section {
   padding: 50px 20px;
-  background: #d7d7d7; /* White background for whole section */
+  background: #9e9e9e; /* White background for whole section */
 }
 
 .exp-title {
@@ -65,7 +65,7 @@
 }
 
 .exp-right {
-  background: #ececec;
+  background: #d7d7d7;
 
   padding: 15px 20px;
   margin-left: 20px;
@@ -104,11 +104,3 @@
   background: #ff9800;
 }
 
-/* .beyond-work-link:hover {
-  transform: scale(1.02);
-  transition: transform 0.2s ease-in-out;
-}
-
-.beyond-work-link:hover .exp-right {
-  background: #fff7e6;
-} */

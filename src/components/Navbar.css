@@ -1,7 +1,7 @@
 .logo {
   height: 80px;
   width: 80px; /* make it a perfect square */
-  background-color: #d7d7d7;
+  background-color: #9e9e9e;
   border-radius: 50%; /* full circle */
   overflow: hidden; /* hide parts of image outside the circle */
   display: flex;

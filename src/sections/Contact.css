@@ -8,7 +8,7 @@
 /* Left Panel */
 .contact-left {
   flex: 1;
-  background: #d7d7d7;
+  background: #9e9e9e;
   color: #000000;
   padding: 0 4rem;
   display: flex;
@@ -61,7 +61,7 @@
 }
 
 .icon a {
-  color: #fff;
+  color: #9e9e9e;
   font-size: 40px;
   display: flex;
   align-items: center;
