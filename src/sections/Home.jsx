@@ -12,7 +12,7 @@ export default function Home() {
       <div className="hero-left">
         <div className="intro">
           <p className="hi">Hi, I am</p>
-          <h1 className="name">Amit Sure<span className="ai-engg">- AI Engineer</span></h1>
+          <h1 className="name">Amit Sure<span className="ai-engg">-AI Engineer</span></h1>
           <p className="small-text">3.5 years of experience in AI/ML, Deep Learning, and Data Analytics</p>
 
           <a

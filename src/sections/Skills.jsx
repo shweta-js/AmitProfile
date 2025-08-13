@@ -16,7 +16,7 @@ export default function Skillset() {
            and creating insightful dashboards with tools like Tableau and Power BI. 
            Passionate about turning complex datasets into actionable insights and impactful business outcomes.
         </p>
-        <a className="download-btn" href="../../public/amit-sure-resume.pdf" download="amit-sure-resume.pdf" target="_blank" type="application/octet-stream">
+        <a className="download-btn" href="/amit-sure-resume.pdf" download="amit-sure-resume.pdf" target="_blank" type="application/octet-stream">
   Download Resume <span className="arrow">↓</span>
 </a>
       </div>
