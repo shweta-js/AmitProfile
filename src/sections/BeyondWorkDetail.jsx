@@ -12,16 +12,28 @@ const beyondWorkDetails = [
     id: "0",
     title: "Isha Foundation – Volunteer & Sadhanapada Participant",
     duration: "Nov 2023 – Dec 2024",
-    description:
-      "Volunteered at Isha Yoga Center, contributed to operations and dashboards for program applications, and completed the 7-month Sadhanapada program.",
+    description: `
+Contributed to the Data Science team, streamlining operations and improving decision-making for the Sadhanapada application process, including dashboard and visualization design.  
+
+Volunteered at the Isha Yoga Center, driven by Sadhguru's vision, particularly his initiatives promoting ecological harmony and a profound reconnection with nature like Cauvery Calling and Save Soil. My time involved living amidst the natural surroundings at the foothills of the Velliangiri Mountains, allowing for a deep engagement with the elements of nature.  
+
+Selected for the Sadhanapada program, a selective global initiative (1,200 chosen out of 30,000 applicants) — a 7-month residential program for inner transformation designed to establish balance, clarity, and emotional stability.  
+
+Cultivated inner stability and enhanced capabilities to manage work efficiently and calmly, fostering mental clarity that drives success in both personal and professional pursuits.  
+
+Gained diverse practical experience through activities like cooking, farming, and promoting yoga, offering my skills and giving back to society through Sadhguru's vision.
+    `,
     image: AmitImage
   },
+  
   {
     id: "1",
     title: "Maha Kumbh Mela Experience",
     duration: "Jan 2025 – Mar 2025",
-    description:
-      "Gained exposure to large-scale event logistics, adaptability, and cultural richness while living onsite during the world's largest gathering.",
+    description:`This personal initiative allowed for deep exploration of its unique energy, logistical complexities, and vibrant cultural tapestry.
+Gained unparalleled exposure to large-scale temporary city management, complex logistical coordination, and diverse community engagement by living on-site and actively participating in daily life, including engaging with various akhadas and daily rituals of bathing in the sangam
+Cultivated enhanced adaptability, resilience, mindfulness, and cross-cultural communication skills within a dynamic and challenging environment.
+`,
     image: KumbhImage
   },
   {

@@ -35,6 +35,7 @@ const Navbar = () => {
         <a onClick={() => handleScrollNav("home")} className="nav-btn">Home</a>
         <a onClick={() => handleScrollNav("skills")} className="nav-btn">Skills</a>
         <a onClick={() => handleScrollNav("experience")} className="nav-btn">Experience</a>
+        <a onClick={() => handleScrollNav("projects")} className="nav-btn">Projects</a>
         <a onClick={() => handleScrollNav("recommendation")} className="nav-btn">Recommendations</a>
         <a onClick={() => handleScrollNav("contact")} className="nav-btn">Contact</a>
       </div>

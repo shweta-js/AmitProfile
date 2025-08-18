@@ -17,6 +17,7 @@ import BeyondWork from "./sections/BeyondWork";
 import BeyondWorkDetail from "./sections/BeyondWorkDetail"; // make sure you have this
 import ExperienceDetail from "./sections/ExperienceDetail";
 import RecommendationDetail from "./sections/RecommendationDetail";
+import Projects from "./sections/Projects"; 
 
 // Layout that handles scrolling to section based on hash
 function ScrollLayout() {
@@ -48,6 +49,9 @@ function ScrollLayout() {
         </section>
         <section id="experience">
           <Experience />
+        </section>
+        <section id="projects">
+          <Projects />
         </section>
         <section id="recommendation">
           <Recommendations />
